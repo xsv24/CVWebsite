@@ -33,7 +33,7 @@ $(document).ready(function(){
         
         var isEmail = isEmailOkay(email);
         if(!isEmail){
-            $("#error_text").text("Please check email!");
+            $("#error_text").text("Please check email is correct");
             return false;
         }
             

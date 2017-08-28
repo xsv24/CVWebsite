@@ -20,24 +20,28 @@
 
 <head>
   <title>Thomas Pearson CV</title>
-  <link href="thomasCV.css" rel="stylesheet" type="text/css" />
+ 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./styles/about.css">
+  <link rel="stylesheet" type="text/css" href="./styles/containers.css">
+  <link rel="stylesheet" type="text/css" href="./styles/experiences.css">
+  <link rel="stylesheet" type="text/css" href="./styles/global.css">
+  <link rel="stylesheet" type="text/css" href="./styles/languages.css">
+  <link rel="stylesheet" type="text/css" href="./styles/resize.css">
+  <link rel="stylesheet" type="text/css" href="./styles/showcase.css">
+  <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
 
   <script src="./scripts/submit.js"></script>
   <script src="./scripts/links.js"></script>
   <script src="./scripts/list_highlight.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <!-- Header 
-  <header>
-    <div id="logo">
-      <img src="./images/codedev.png"/>
-    </div>
-  </header>
--->
   <section id="showcase">
     <img src="./images/showcase_2.png" alt="My Desk layout">
   </section>
@@ -81,7 +85,7 @@
           $name_skill_creator->create_name_skill_list(array_merge($lang_res, $concept_res, $platform_res), 12);?>
       </div>
       
-      <input type="submit" value="Git Hub" id="git_hub">
+      <input type="submit" value="Git Hub" class="git_hub">
     </div>
   </section>
   
@@ -105,9 +109,17 @@
     </form>
 
     <input id="submit" type="submit" value="Submit" name="submit">
-    <p class="center_text"></p>
+    <p id="error_text" class="center_text"></p>
   
   </div>
+ 
+  <footer>
+    <div class="container flex_horizontal">
+      <div class="footer_item" id="linkedin"><span id="linkedin_logo"></span> <p>Linkedin</p></div>
+      <div class="footer_item git_hub"><span id="git_hub_logo"></span><p>Git Hub</p></div>
+      <div class="footer_item" id="email_manual"><span id="email_logo"></span><p>Email</p></div>
+    </div>
+  </footer>
 
 </body>
 
