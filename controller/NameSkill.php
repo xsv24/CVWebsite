@@ -5,7 +5,7 @@ class NameSkillCreator{
     // creates a score out of 5 based on skill 
     $stars= "";
     for($i = 5; $i > 0; $i--){
-      if($i < $skill){
+      if($i <= $skill){
         // add a span to fill-in the star 
         $stars = $stars."<span class='fill_skill_star star_list'>";
       }else{
