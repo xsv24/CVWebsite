@@ -3,8 +3,8 @@
 
 #about{
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: top;
+    align-content: top;
   }
   
   #about_pic{
@@ -18,11 +18,11 @@
   #about_pic img{
     display: block;
     margin: auto;
+    flex:1;
   }
   
   #education{
     text-align: justify;
     flex:1;
-   
   }
   

@@ -69,6 +69,11 @@ INSERT INTO platforms(name, skill)
 INSERT INTO platforms(name, skill)
     VALUES("Unity", 3);
 
+INSERT INTO platforms(name, skill)
+    VALUES("Adobe Illustrator", 3);
+
+
+
 #concepts 
 CREATE TABLE concepts(
     concept_id INT NOT NULL AUTO_INCREMENT,
@@ -131,8 +136,11 @@ INSERT INTO experiences(exp_title, exp_category_id ,exp_loc, exp_from_date, exp_
         "2014/02/26", 
         "2017/06/12",
         "
-        Majoring  Computer Science and Minoring Information Technology,<br><br>
-        Learn a broad spectrum of skills from business management through to developing software and hardware. Emerge from your studies at Massey with a well-rounded understanding of the whole industry as well as the specialist skills needed to become an excellent ICT professional.
+        Majoring in Computer Science and Minoring in Information Technology:<br><br>
+
+        I learnt a broad spectrum of skills from business management through to developing software and hardware.
+        Through my degree I have gained a well-rounded understanding of the industry as well as the specialist skills
+        needed to become an excellent ICT professional. 
         "
     );
 
@@ -143,13 +151,17 @@ INSERT INTO experiences(exp_title, exp_category_id ,exp_loc, exp_from_date, exp_
         "Massey University Commerical Project",
         "2016/02/20", 
         "2017/06/3",
-        "
-        This project involed creating a Android application for sporting events allowing scheduling of events and matches at public and private venues.<br><br>
+        "   
+        This project involved creating an Android application for sporting events allowing scheduling of matches at 
+        public and private venues.<br><br>
 
-        This application involves the following technologies: Android client code written in Java, the UI structure layout and widgets are created in XML, AWS Lambda operates 
-        as the sever returning JSON and generally communicates with Dynamo DB (a NoSQL Database), and Bit Bucket is used as our version control system which uses Git.<br><br>
-        
-        I originally worked on this project as a paper that was part of my degree with two other students and we used Agile Scrum to organize our tasks and track the progress of the applications development. However, I have since been employed by the project director to assist his team to complete the project. Therefore, I have worked on this project from scratch and have been involved in all areas of the projects development.
+        This application involved the following technologies: Android client code written in Java, the UI structure 
+        layout and widgets created in XML, AWS Lambda operated as the sever returning JSON and generally communicates 
+        with Dynamo DB (a NoSQL Database), and Bit Bucket was used as our version control system which uses Git.<br><br>
+
+        I originally worked on this project as a paper that was part of my degree with two other students and we used 
+        Agile Scrum to organize our tasks and track the progress of the applications development. Once the paper finished 
+        I was invited to work with the project director to assist his team in completing the project.
         "
     );
 

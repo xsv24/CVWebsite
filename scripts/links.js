@@ -7,7 +7,7 @@ $(document).ready(function(){
             $("#git_hub_logo").css("background-position", "0px 0px");
         })
         .click(function(){
-            window.open("https://www.linkedin.com/in/thomas-pearson-4180b8138/");
+            window.open("https://github.com/xsv24");
         });
 
     $("#linkedin")
@@ -18,7 +18,7 @@ $(document).ready(function(){
             $("#linkedin_logo").css("background-position", "0px 0px");
         })
         .click(function(){
-            window.open("https://github.com/xsv24");
+            window.open("https://www.linkedin.com/in/thomas-pearson-4180b8138/");
         });
 
     $("#email_manual")

@@ -21,7 +21,7 @@
 <head>
   <title>Thomas Pearson CV</title>
  
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans'>
   <link rel="stylesheet" type="text/css" href="./styles/about.css">
   <link rel="stylesheet" type="text/css" href="./styles/containers.css">
   <link rel="stylesheet" type="text/css" href="./styles/experiences.css">
@@ -30,6 +30,7 @@
   <link rel="stylesheet" type="text/css" href="./styles/resize.css">
   <link rel="stylesheet" type="text/css" href="./styles/showcase.css">
   <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="./styles/progress.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
@@ -55,9 +56,10 @@
       <div id="description">
           <h2>About Me</h2>
           <p>
-            My name Thomas Pearson, I'm a Developer from Auckland, New Zealand.
-            I'm Developer with a huge passion for devloping and creating. I love to learn, about any of the newest technologies wether
-            it's the newest language to the newest framework.
+            My name is Thomas Pearson, I'm a developer from Auckland, New Zealand
+            with a huge passion for developing and creating. I love to learn and
+            am passionate about honing my skills and embracing the newest technologies,
+            languages, and frameworks.
           </p>
         </div>
 
@@ -68,9 +70,9 @@
         <div id="education">
           <h2>Education</h2>
           <p>          
-            I've majored in Computer Science and minored in Information Technology at Massey University. I've gained
-            commercial experience working on Full Stack Developer for Tennis North Harbor. Where we've
-            used Agile Scrum, AWS Dyanamo, AWS Lambda, SQLite, Git, MVC and Test Driven Development.
+            I majored in Computer Science with a minor in Information Technology from 
+            Massey University. I've gained commercial experience working on Android application as a Full Stack
+            Developer using Agile Scrum, AWS Dynamo and AWS Lambda.
           </p>
         </div>
       </div>
@@ -90,7 +92,7 @@
   </section>
   
   <div class="container">
-    <h1>Experiences</h1>
+    <h1>Experience</h1>
     <p class="sub_title"/>
     <?php 
       $creator = new ExperienceCreate();
@@ -107,12 +109,13 @@
       <input id="subject" type="text" name="subject" value="Subject"></br>
       <textarea id="message"name="message">Message</textarea></br>
     </form>
-
-    <input id="submit" type="submit" value="Submit" name="submit">
+    <div class="progress_button">
+      <input id="submit" type="submit" value="Submit" name="submit">
+      <div id="progress"></div>
+      
+    </div>
     <p id="error_text" class="center_text">errortext</p>
-
-</div>
-
+    
   </div>
  
   <footer>
@@ -124,5 +127,4 @@
   </footer>
 
 </body>
-
 </html>

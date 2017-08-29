@@ -11,8 +11,8 @@
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
     
-    $mail->Username = "tpcv.hopto@gmail.com";
-    $mail->Password = "Hashed247";
+    $mail->Username = "cv email here";
+    $mail->Password = "cv password here";
     
     $mail->SMTPSecure ="tsl";
     $mail->Port = 587;

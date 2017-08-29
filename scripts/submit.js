@@ -63,7 +63,8 @@ $(document).ready(function(){
         
         if(res.success === true){
             console.log("success");
-            $("#error_text").text("Sent!").css("visibility", "visible");
+            $("#progress").removeClass("progress");
+            $("#progress").addClass("complete_tick");
         }else{
             console.log("Fail" + res.error_msg);
             $("#error_text").text("Failed to Send!").css("visibility", "visible");
@@ -86,7 +87,8 @@ $(document).ready(function(){
 
     // Submit button click
     $("#submit").click(function(){
-        $("#error_text").css("visibility", "hidden");;
+        $("#error_text").css("visibility", "hidden");
+        $("#progress").removeClass("complete_tick");
 
         var contents = [];
         $("input[type!=submit], textarea").each(function(index, value){
@@ -95,9 +97,10 @@ $(document).ready(function(){
         res = check_contents(contents);
         
         // request email message be sent
-        if(res)
+        if(res){
+            $("#progress").addClass("progress");
             post_data(contents);
-        
+        }
     });
 
     
