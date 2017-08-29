@@ -28,22 +28,27 @@ footer .flex_horizontal div:hover{
     color:#ffffff;
     cursor: pointer;
 }
-footer .flex_horizontal span{
-    width:50px;
-    height: 50px;
-    padding-right: 25px;
-}
 .footer_item{
     padding-top:10px;
     padding-bottom: 10px;
     min-width: 150px;
+    width:50px;
+    height: 50px;
+    margin-right: 25px;
+}
+#email_logo, #git_hub_logo, #linkedin_logo{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
 }
 #email_logo{
-    background: url("../images/email.png") no-repeat;
+    background-image: url("../images/email.png");
+    width: 48px;
 }
 #git_hub_logo{
-    background: url("../images/git_hub.png") no-repeat;
+    background-image: url("../images/git_hub.png");
+    width:50px;
 }
 #linkedin_logo{
-    background: url("../images/linkedin.png") no-repeat;
+    background-image: url("../images/linkedin.png");
+    width: 48px;
 }

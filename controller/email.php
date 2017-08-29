@@ -2,7 +2,7 @@
     require './PHPMailer/PHPMailerAutoload.php';
     $mail = new PHPMailer();
 
-    $to = "xsv2477@gmail.com";
+    $to = "thomaspearson.dev@gmail.com";
     $from = $_POST["email"];
     $name = $_POST["name"];
     $sub = $_POST["subject"];
@@ -27,10 +27,9 @@
     $mail->isHtml(true);
 
     if(!$mail->send()){
-        echo "mail fail";
-        echo $mail->ErrorInfo;
+        echo json_encode(array('success'=>false, 'error_msg'=> $mail->ErrorInfo));
     }else{
-        echo "mail success";
+        echo json_encode(array('success'=>true));
     }
 
 ?>

@@ -109,8 +109,10 @@
     </form>
 
     <input id="submit" type="submit" value="Submit" name="submit">
-    <p id="error_text" class="center_text"></p>
-  
+    <p id="error_text" class="center_text">errortext</p>
+
+</div>
+
   </div>
  
   <footer>

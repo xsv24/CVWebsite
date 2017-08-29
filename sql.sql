@@ -18,16 +18,19 @@ INSERT INTO languages(name, skill)
     VALUES("CSS", 4);
 
 INSERT INTO languages(name, skill)
-    VALUES("php", 4);
+    VALUES("JavaScript", 4);
+
+INSERT INTO languages(name, skill)
+    VALUES("PHP", 4);
 
 INSERT INTO languages(name, skill)
     VALUES("Java", 5);
 
 INSERT INTO languages(name, skill)
-    VALUES("C#", 4);
+    VALUES("C/C++", 4);
 
 INSERT INTO languages(name, skill)
-    VALUES("JavaScript", 4);
+    VALUES("C#", 4);
 
 INSERT INTO languages(name, skill)
     VALUES("SQL", 4);

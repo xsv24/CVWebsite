@@ -88,5 +88,9 @@ html{
   input[type=submit]:hover, input[type=image]{
     background: #1f9591;
   }
-  
+  #error_text{
+    padding-top:20px;
+    visibility: hidden;
+    margin: auto;
+  }
  

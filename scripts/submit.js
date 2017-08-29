@@ -18,22 +18,26 @@ $(document).ready(function(){
     // check the contents are not empty or equal to orginal value
     function check_contents(contents){
         var email = "";
+        var pass = true;
         $.each(contents, function(index, value){
             var id = value.id.toLowerCase()
             var value = value.value.toLowerCase();
             if(id == value){
-                $("#error_text").text("Please complete fill the form!");
-                return false;
+                pass = false;
             }
 
             if(id == "email")
                 email = value;
 
         });
+        if(pass === false){
+            $("#error_text").text("Please complete fill the form!").css("visibility", "visible");
+            return false;
+        }
         
         var isEmail = isEmailOkay(email);
         if(!isEmail){
-            $("#error_text").text("Please check email is correct");
+            $("#error_text").text("Please check email is correct").css("visibility", "visible");
             return false;
         }
             
@@ -54,7 +58,17 @@ $(document).ready(function(){
             console.log(json_text);
         return JSON.parse(json_text);
     }
-
+    function response_handler(data){
+        var res = JSON.parse(data);
+        
+        if(res.success === true){
+            console.log("success");
+            $("#error_text").text("Sent!").css("visibility", "visible");
+        }else{
+            console.log("Fail" + res.error_msg);
+            $("#error_text").text("Failed to Send!").css("visibility", "visible");
+        }
+    }
     // post_data for email
     function post_data(contents){
         var json = convert_to_json(contents);
@@ -64,14 +78,15 @@ $(document).ready(function(){
             url:"./controller/email.php",
             data:json,
             success: function(data){
-                console.log("returned: " + data);
+                response_handler(data);
             }
-        })    
+               
+        })   
     }
 
     // Submit button click
     $("#submit").click(function(){
-        $("#error_text").text("");
+        $("#error_text").css("visibility", "hidden");;
 
         var contents = [];
         $("input[type!=submit], textarea").each(function(index, value){
