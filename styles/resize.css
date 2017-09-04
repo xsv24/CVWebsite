@@ -15,6 +15,7 @@
     flex-direction: column;
   }
 }
+
 @media(max-width:580px){
   footer .flex_horizontal{
     flex-direction: column;

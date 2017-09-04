@@ -1,28 +1,28 @@
-
 /* about */
 
-#about{
-    display: flex;
-    align-items: top;
-    align-content: top;
-  }
-  
-  #about_pic{
-     flex: 1;
-  }
-  
-  #about_pic img{
-    display: block;
-    margin: auto;
-  }
+#about {
+  display: flex;
+  align-items: top;
+  align-content: top;
+}
 
-  #description{
-    text-align: justify;
-    flex: 1;
-  }
-  
-  #education{
-    text-align: justify;
-    flex:1;
-  }
-  
+#about_pic {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about_pic img {
+  display: block;
+  margin: auto;
+}
+
+#description {
+  text-align: justify;
+  flex: 1;
+}
+
+#education {
+  text-align: justify;
+  flex: 1;
+}
