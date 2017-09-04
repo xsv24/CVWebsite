@@ -1,34 +1,27 @@
 $(document).ready(function(){
-    $(".git_hub") 
-        .mouseenter(function(){
-            $("#git_hub_logo").css("background-position", '-50.5px 0px');
-        })
-        .mouseleave(function(){
-            $("#git_hub_logo").css("background-position", "0px 0px");
-        })
-        .click(function(){
-            window.open("https://github.com/xsv24");
-        });
+    
+    function set_background_pos(event_trig, xy_cord){
+		child_logo = event_trig.children("#linkedin_logo, #git_hub_logo, #email_logo");
+        child_logo.css("background-position", xy_cord);
+    }
 
-    $("#linkedin")
+    $(".git_hub, #linkedin, #email_manual") 
         .mouseenter(function(){
-            $("#linkedin_logo").css("background-position","-48px 0px");
+            set_background_pos($(this), '-50px 0px');
         })
         .mouseleave(function(){
-            $("#linkedin_logo").css("background-position", "0px 0px");
+            set_background_pos($(this), '0px 0px');
         })
         .click(function(){
-            window.open("https://www.linkedin.com/in/thomas-pearson-4180b8138/");
-        });
+            var id = $(this).attr("id");
 
-    $("#email_manual")
-        .mouseenter(function(){
-            $("#email_logo").css("background-position", "-48px 0px");
-        })
-        .mouseleave(function(){
-            $("#email_logo").css("background-position", "0px 0px");
-        })
-        .click(function(){
-            window.location.href = "mailto:thomaspearson.dev@gmail.com";
-        });
+            if(id === "git_hub")
+                window.open("https://github.com/xsv24");
+            else if(id === "linkedin")
+                window.open("https://www.linkedin.com/in/thomas-pearson-4180b8138/");
+            else if(id === "email_manual")
+                window.location.href = "mailto:thomaspearson.dev@gmail.com";    
+        }
+    );
+
 });

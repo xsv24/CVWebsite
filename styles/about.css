@@ -8,17 +8,17 @@
   }
   
   #about_pic{
-    flex: 1;
+     flex: 1;
   }
   
-  #description{
-    text-align: justify;
-    flex: 1;
-  }
   #about_pic img{
     display: block;
     margin: auto;
-    flex:1;
+  }
+
+  #description{
+    text-align: justify;
+    flex: 1;
   }
   
   #education{
