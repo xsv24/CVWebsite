@@ -14,8 +14,9 @@ $(document).ready(function(){
         })
         .click(function(){
             var id = $(this).attr("id");
+            var class_val = $(this).attr("class");
 
-            if(id === "git_hub")
+            if(id === "git_hub" || class_val === "git_hub")
                 window.open("https://github.com/xsv24");
             else if(id === "linkedin")
                 window.open("https://www.linkedin.com/in/thomas-pearson-4180b8138/");
