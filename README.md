@@ -4,13 +4,9 @@
 
 Currently running Apache on my [Raspbery PI](https://www.raspberrypi.org/) with MySQL. </br>[Vagrant](https://www.vagrantup.com) and [Virtual Box](https://www.virtualbox.org/) used for local deployment and testing.
 
-* HTML/CSS
-* Javasrcipt
-* JQuery
-* PHP
-* SQL
+ HTML/CSS, Javasrcipt, JQuery, PHP,  SQL.
 
- <br/>
+
 
 
 
