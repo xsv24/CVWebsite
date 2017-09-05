@@ -10,7 +10,8 @@ Currently running Apache on my [Raspbery PI](https://www.raspberrypi.org/) with 
 
 
 ![Alt text](/images/webpage.png)
-
+### Instructions
+[PHPMailer](https://github.com/Synchro/PHPMailer) will have to be cloned into the controller directory apon cloning this repo.
 
 ### Other Repos Used
 
