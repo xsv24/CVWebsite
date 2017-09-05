@@ -11,8 +11,11 @@ Currently running Apache on my [Raspbery PI](https://www.raspberrypi.org/) with 
 
 ![Alt text](/images/webpage.png)
 ### Instructions
-[PHPMailer](https://github.com/Synchro/PHPMailer) will have to be cloned into the controller directory apon cloning this repo.
+```
+PHPMailer repo listed below will have to be cloned into the controller directory apon cloning this repo. 
 
+Add gmail email and password with in email.php in the controller directory. This account will be used to forward the email to your desired email address.
+```
 ### Other Repos Used
 
 Using [PHPMailer](https://github.com/Synchro/PHPMailer) for sending emails. In the contact section of the website.
